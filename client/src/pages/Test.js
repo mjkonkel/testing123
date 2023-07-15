@@ -12,6 +12,8 @@ import {
     Radio,
     Stack
 } from "@mui/material";
+import { Link } from 'react-router-dom';
+
 
 const Test = () => {
     return (
@@ -22,14 +24,12 @@ const Test = () => {
                         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                             Header
                         </Typography>
-                        <Button color="inherit">Login</Button>
+                        <Button component={Link} to="/login" color="inherit">Login</Button>
                     </Toolbar>
                 </AppBar>
             </Box>
             <Stack gap={2} sx={{ p: 2 }} alignItems="flex-start">
-                <Button variant="contained" color="secondary">
-                    Button
-                </Button>
+                <Button component={Link} to="/" variant="contained" color="secondary">To Home</Button>
                 <Box>
                     <Checkbox defaultChecked />
                 </Box>

@@ -2,13 +2,12 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 
-
-const Home = () => {
+const Login = () => {
     return (
         <>
-        <div>This is Home</div>
+        <div>This is Login</div>
         
-        <Button component={Link} to="/test" variant="contained" color="secondary">To Test</Button>
+        <Button component={Link} to="/home" variant="contained" color="secondary">To Home</Button>
         
 
         <Button variant="outlined">BUTTON</Button>
@@ -16,4 +15,4 @@ const Home = () => {
     )
 }
 
-export default Home;
+export default Login;
